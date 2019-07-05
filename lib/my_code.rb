@@ -54,11 +54,13 @@ def reduce_to_all_true(source_array)
 #end
 end
 def reduce_to_any_true(source_array)
+  t_f = nil
   count = 0
   while count < source_array.lengh
     if source_array[count] == true
-      return true
+      t_f = true
     else count += 1
   end
 end
+t_f
 end
