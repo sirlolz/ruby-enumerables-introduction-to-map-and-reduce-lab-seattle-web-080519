@@ -59,13 +59,12 @@ end
 return true
 end
 def reduce_to_any_true(source_array)
-  t_f = ni
   count = 0
-  while count < source_array.lengh
+  while count < source_array.length
     if source_array[count] == true
-      t_f = true
-    else count += 1
+      return true
+    else count +=1
+    end
   end
-end
-t_f
+  return false
 end
