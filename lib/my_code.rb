@@ -55,4 +55,11 @@ def reduce_to_all_true(source_array)
   end
 end
   
-def
+def reduce_to_any_true(source_array)
+  count = 0
+  while count < source_array.lentgh
+    if source_array[count] == true
+      return true
+    else count += 1
+  end
+end
